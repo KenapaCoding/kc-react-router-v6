@@ -1,27 +1,25 @@
 /** @format */
 
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
 
 const Navigation = () => {
-    const [active,setActive] = useState()
 	return (
 		<>
 			<ul>
 				<li>
-					<NavLink className={({isActive}) => {return isActive ? 'active': ''}}
-						to='/'>
+					<a 
+						href='/'>
 						Home
-					</NavLink>
+					</a>
 				</li>
 				<li>
-					<NavLink className={({isActive}) => {return isActive ? 'active': ''}} to='/cars'>Cars</NavLink>
+					<a  href='/cars'>Cars</a>
 				</li>
 				<li>
-					<NavLink className={({isActive}) => {return isActive ? 'active': ''}} to='/contact'>Contact</NavLink>
+					<a  href='/contact'>Contact</a>
 				</li>
 				<li>
-					<NavLink className={({isActive}) => {return isActive ? 'active': ''}}to='/about'>About</NavLink>
+					<a href='/about'>About</a>
 				</li>
 			</ul>
 		</>
