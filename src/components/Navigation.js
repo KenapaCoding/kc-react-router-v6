@@ -1,25 +1,34 @@
 /** @format */
 
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
 	return (
 		<>
 			<ul>
 				<li>
-					<a 
-						href='/'>
+					<NavLink
+						to='/'
+						reloadDocument>
 						Home
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a  href='/cars'>Cars</a>
+					<NavLink
+						to='/cars'>
+						Cars
+					</NavLink>
 				</li>
 				<li>
-					<a  href='/contact'>Contact</a>
+					<NavLink
+						to='/contact'
+						replace>
+						Contact
+					</NavLink>
 				</li>
 				<li>
-					<a href='/about'>About</a>
+					<NavLink to='/about'>About</NavLink>
 				</li>
 			</ul>
 		</>

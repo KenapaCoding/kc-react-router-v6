@@ -1,8 +1,10 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 
 const CarDetail = () => {
-  return <div>CarDetail </div>;
+  const {id} = useParams()
+  return <div>CarDetail {id} </div>;
 };
 
 export default CarDetail;
